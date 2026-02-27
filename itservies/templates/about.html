@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Nexus Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --bg-color: #fcfaf7;
+    --text-main: #1a1a1a;
+    --text-muted: #666;
+    --accent-gold: #c5a059;
+    --card-bg: #ffffff;
+    --border-color: #e5e5e5;
+    --dark-bg: #121212;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Inter',sans-serif;
+    background:var(--bg-color);
+    color:var(--text-main);
+    line-height:1.7;
+}
+
+/* Utility Bar */
+
+.utility-bar {
+    background:var(--dark-bg);
+    padding:8px 10%;
+    display:flex;
+    justify-content:flex-end;
+    gap:25px;
+}
+
+.utility-bar a {
+    color:#ddd;
+    text-decoration:none;
+    font-size:0.75rem;
+}
+
+.utility-bar a:hover {
+    color:var(--accent-gold);
+}
+
+/* Navbar */
+
+nav {
+    padding:1.5rem 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    border-bottom:1px solid var(--border-color);
+}
+
+.logo {
+    font-family:'Playfair Display',serif;
+    font-size:1.6rem;
+    letter-spacing:2px;
+}
+
+.nav-links a {
+    text-decoration:none;
+    color:var(--text-main);
+    margin-left:30px;
+}
+
+/* Hero */
+
+header {
+    text-align:center;
+    padding:100px 10% 80px;
+    background-image:linear-gradient(rgba(252,250,247,0.85),rgba(252,250,247,0.85)),
+    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    background-size:cover;
+}
+
+header h1 {
+    font-family:'Playfair Display',serif;
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+header p {
+    color:var(--text-muted);
+    max-width:700px;
+    margin:auto;
+}
+
+/* Section */
+
+.section {
+    padding:80px 10%;
+}
+
+.section-title {
+    font-family:'Playfair Display',serif;
+    font-size:2.2rem;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+/* Cards */
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+.card {
+    background:var(--card-bg);
+    border:1px solid var(--border-color);
+    padding:40px;
+    transition:0.4s;
+}
+
+.card:hover {
+    border-color:var(--accent-gold);
+    box-shadow:0 20px 40px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-family:'Playfair Display',serif;
+    margin-bottom:10px;
+}
+
+.gold {
+    color:var(--accent-gold);
+    font-weight:600;
+}
+
+/* Founder */
+
+.founder {
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+/* Stats */
+
+.stats {
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.stat h2 {
+    font-family:'Playfair Display',serif;
+    font-size:2rem;
+    color:var(--accent-gold);
+}
+
+/* Footer */
+
+footer {
+    background:var(--dark-bg);
+    color:white;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.footer-logo {
+    font-family:'Playfair Display',serif;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="utility-bar">
+<a href="#">Student Login</a>
+<a href="#" style="color:var(--accent-gold)">Registration</a>
+</div>
+
+<nav>
+<div class="logo">NEXUS ACADEMY</div>
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="#">Programs</a>
+</div>
+</nav>
+
+
+<header>
+
+<h1>About Nexus Academy</h1>
+
+<p>
+Nexus Academy is a premier institution dedicated to creating world-class IT professionals through expert-designed courses and real industry mentorship.
+</p>
+
+</header>
+
+
+<section class="section">
+
+<h2 class="section-title">Our Founder</h2>
+
+<div class="founder card">
+
+<h3>Nexus's</h3>
+
+<p>
+Founded in 2022, Nexus Academy was created with a vision to bridge the gap between academic learning and real-world IT industry demands.
+
+Nexue's, a software architect and industry mentor, built this academy to help students achieve elite technical mastery and secure high-paying careers globally.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="section-title">Student Success</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Rahul Sharma</h3>
+<p>Software Engineer</p>
+<p class="gold">Package: ₹18 LPA</p>
+</div>
+
+<div class="card">
+<h3>Priya Patel</h3>
+<p>AI Engineer</p>
+<p class="gold">Package: ₹22 LPA</p>
+</div>
+
+<div class="card">
+<h3>Aman Verma</h3>
+<p>Cyber Security Analyst</p>
+<p class="gold">Package: ₹16 LPA</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="section-title">Our Achievements</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>5000+</h2>
+<p>Students Trained</p>
+</div>
+
+<div class="stat">
+<h2>1200+</h2>
+<p>Students Placed</p>
+</div>
+
+<div class="stat">
+<h2>25 LPA</h2>
+<p>Highest Package</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-logo">NEXUS</div>
+
+<p style="color:#888">Elevating technical education to an art form.</p>
+
+</footer>
+
+</body>
+</html>
